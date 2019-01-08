@@ -1,10 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
-<<<<<<< HEAD
- *               2017 The LineageOS Project
-=======
  *               2017-2020 The LineageOS Project
->>>>>>> 353ba80... sdm845-common: parts: Implement dynamic thermal profiles
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,12 +33,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        if (DozeUtils.isDozeEnabled(context) && DozeUtils.sensorsEnabled(context)) {
-            if (DEBUG) Log.d(TAG, "Starting service");
-            DiracUtils.initialize();
-            DozeUtils.startService(context);
-            ThermalUtils.startService(context);
-        }
+        if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        DiracUtils.initialize();
+        DozeUtils.startService(context);
+        ThermalUtils.startService(context);
     }
-
 }
