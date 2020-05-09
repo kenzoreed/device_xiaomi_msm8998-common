@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.thermal.ThermalUtils;
 
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -37,6 +38,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             if (DEBUG) Log.d(TAG, "Starting service");
             DiracUtils.initialize();
             DozeUtils.startService(context);
+            ThermalUtils.startService(context);
         }
     }
 
