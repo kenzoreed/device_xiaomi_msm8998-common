@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.dex2oat-filter=speed \
+dalvik.vm.image-dex2oat-filter=speed
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     aaudio.hw_burst_min_usec=2000 \
