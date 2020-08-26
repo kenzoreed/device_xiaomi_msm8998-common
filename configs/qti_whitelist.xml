@@ -36,6 +36,7 @@
     <allow-in-power-save package="com.qualcomm.qti.telephonyservice" />
     <allow-in-power-save package="com.qualcomm.qcrilmsgtunnel" />
     <allow-in-power-save package="com.qualcomm.qti.ims" />
+    <allow-in-power-save package="com.google.android.gms"/>
 
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
