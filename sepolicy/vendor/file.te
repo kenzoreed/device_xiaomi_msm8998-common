@@ -8,3 +8,7 @@ type thermal_decrypt_file, core_data_file_type, data_file_type, file_type;
 
 # USB
 type sysfs_usb_device, sysfs_type, fs_type;
+
+# Wi-fi
+type sysfs_wifi, fs_type, sysfs_type;
+type wifi_nv_data_file, file_type, data_file_type;

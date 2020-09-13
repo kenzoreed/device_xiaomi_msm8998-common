@@ -10,3 +10,6 @@ type vendor_sensors_prop, property_type;
 
 # Thermal engine
 type thermal_prop, property_type;
+
+#Wi-Fi
+type wifi_active_prop, property_type;
