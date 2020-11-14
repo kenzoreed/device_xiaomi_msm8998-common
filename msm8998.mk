@@ -195,9 +195,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/graphics/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     $(LOCAL_PATH)/configs/graphics/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
-# Doze
+# Device-specific settings
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
 
 # DRM
 PRODUCT_PACKAGES += \
